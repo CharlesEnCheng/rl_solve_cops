@@ -1,7 +1,6 @@
 FROM nvidia/cuda:8.0-cudnn7-devel-ubuntu16.04
 LABEL author=github/tahsinkose
 
-ADD . $HOME/graphnn
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install gcc g++ gfortran wget cpio && \
   cd /tmp && \
   wget http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/15275/l_mkl_2019.3.199.tgz && \
@@ -18,15 +17,13 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install gcc g++ 
   echo "source /opt/intel/mkl/bin/mklvars.sh intel64" >> /etc/bash.bashrc
 
 RUN apt-get -y install libtbb-dev
-
 RUN apt-get install -y mesa-utils -y module-init-tools
-# install nvidia driver
-RUN apt-get install -y binutils
-ADD NVIDIA*.run /tmp/NVIDIA-DRIVER.run
-RUN sh /tmp/NVIDIA-DRIVER.run -a -N --ui=none --no-kernel-module
-RUN rm /tmp/NVIDIA-DRIVER.run
+
+RUN wget https://repo.anaconda.com/archive/Anaconda2-5.3.1-Linux-x86_64.sh
+RUN bash Anaconda2-5.3.1-Linux-x86_64.sh -b -p
 
 RUN apt-get install -y nano
-ENV CUDA_HOME=/usr/local/cuda
-ENV LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+ENV PATH=/root/anaconda2/bin:$PATH
+
+RUN apt-get -y install git
+RUN git clone https://github.com/CharlesEnCheng/rl_solve_cops.git
