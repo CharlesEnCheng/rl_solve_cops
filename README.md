@@ -50,3 +50,11 @@ source /opt/intel/parallel_studio_xe_2020.4.912/bin/psxevars.sh
 
 # tbb 
 apt-get -y install libtbb-dev
+
+# suggest to build up the env through docker directly - tested on mac
+1. cd to Dockerfile directory
+2. docker build -t env:01 .
+3. docker run -it env:01
+4. docker container prune
+5. docker rmi env:01
+6. docker images
