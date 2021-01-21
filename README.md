@@ -9,9 +9,8 @@ Commands may be used are,
 wget https://repo.anaconda.com/archive/Anaconda2-5.3.1-Linux-x86_64.sh\
 bash Anaconda2-5.3.1-Linux-x86_64.sh\
 sudo apt install git\
-
-git clone --recursive https://github.com/Hanjun-Dai/graph_comb_opt.
-git clone https://github.com/Hanjun-Dai/graphnn.
+git clone --recursive https://github.com/Hanjun-Dai/graph_comb_opt.\
+git clone https://github.com/Hanjun-Dai/graphnn.\
 
 # for installing cuda and wont be used for this version
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb
