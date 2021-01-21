@@ -6,11 +6,11 @@ Here is a simply revised version regarding to config setting so that this code c
 Commands may be used are,
 - yet this information can be captured from the revised dockfile in graphnn.
 
-wget https://repo.anaconda.com/archive/Anaconda2-5.3.1-Linux-x86_64.sh\
-bash Anaconda2-5.3.1-Linux-x86_64.sh\
-sudo apt install git\
-git clone --recursive https://github.com/Hanjun-Dai/graph_comb_opt.\
-git clone https://github.com/Hanjun-Dai/graphnn.\
+wget https://repo.anaconda.com/archive/Anaconda2-5.3.1-Linux-x86_64.sh<br/>
+bash Anaconda2-5.3.1-Linux-x86_64.sh<br/>
+sudo apt install git<br/>
+git clone --recursive https://github.com/Hanjun-Dai/graph_comb_opt.<br/>
+git clone https://github.com/Hanjun-Dai/graphnn.<br/>
 
 # for installing cuda and wont be used for this version
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb
