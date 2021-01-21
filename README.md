@@ -6,10 +6,12 @@ Here is a simply revised version regarding to config setting so that this code c
 Commands may be used are,
 - yet this information can be captured from the revised dockfile in graphnn.
 
-wget https://repo.anaconda.com/archive/Anaconda2-5.3.1-Linux-x86_64.sh.
-bash Anaconda2-5.3.1-Linux-x86_64.sh.
+wget https://repo.anaconda.com/archive/Anaconda2-5.3.1-Linux-x86_64.sh
 
-sudo apt install git.
+bash Anaconda2-5.3.1-Linux-x86_64.sh
+
+sudo apt install git
+
 git clone --recursive https://github.com/Hanjun-Dai/graph_comb_opt.
 git clone https://github.com/Hanjun-Dai/graphnn.
 
