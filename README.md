@@ -1,7 +1,10 @@
 # rl_solve_cops
 This is copied from Hanjun-Dai/graph_comb_opt (https://github.com/Hanjun-Dai/graph_comb_opt).
+
 Plsease refer to the original author for further understanding. 
+
 Here is a simply revised version regarding to config setting so that this code can be run on CPU successfully.
+
 
 
 Commands may be used are,
